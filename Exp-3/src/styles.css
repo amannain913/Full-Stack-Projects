@@ -1,0 +1,54 @@
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui;background:#f6f7fb;color:#17202a}nav{height:64px;background:#101828;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 6%;gap:20px}nav div{display:flex;align-items:center;gap:18px}nav a{color:#fff;text-decoration:none}nav button{border:0;border-radius:8px;padding:8px 12px}.role{background:#475467;border-radius:999px;padding:5px 10px;font-size:12px}.page{max-width:1000px;margin:auto;padding:45px 20px}.page h1{font-size:48px;margin:14px 0}.badge{display:inline-block;background:#e9efff;color:#3448a8;padding:7px 12px;border-radius:999px;font-weight:700;font-size:13px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:25px 0}.cards>div{background:#fff;border:1px solid #e4e7ec;border-radius:16px;padding:20px}.token{background:#101828;color:#d0d5dd;padding:20px;border-radius:16px}.token pre{white-space:pre-wrap}.center{min-height:calc(100vh - 64px);display:grid;place-items:center;padding:20px}.login{background:#fff;border:1px solid #e4e7ec;border-radius:18px;padding:30px;width:min(430px,100%);box-shadow:0 15px 40px #0000000d}.login h1{font-size:38px;margin:14px 0 5px}.login input{display:block;width:100%;padding:13px;margin:12px 0;border:1px solid #d0d5dd;border-radius:10px}.primary{width:100%;padding:13px;border:0;border-radius:10px;background:#155eef;color:#fff;font-weight:700;margin:5px 0 15px}.error{background:#fff0f0;color:#b42318;padding:9px;border-radius:8px}.rolebox{padding:16px;background:#eef4ff;border-radius:12px;font-weight:700}@media(max-width:700px){.cards{grid-template-columns:1fr}nav{padding:0 15px}nav div{gap:8px;font-size:13px}.page h1{font-size:38px}}
+.login-options {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.role-login {
+  width: 100%;
+  text-align: left;
+  padding: 16px 18px;
+  border-radius: 13px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.role-login:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px #00000010;
+}
+
+.role-login strong {
+  display: block;
+  font-size: 16px;
+}
+
+.role-login small {
+  display: block;
+  margin-top: 5px;
+  color: #667085;
+}
+
+.role-login.admin {
+  border-left: 5px solid #7f56d9;
+}
+
+.role-login.editor {
+  border-left: 5px solid #155eef;
+}
+
+.role-login.viewer {
+  border-left: 5px solid #12b76a;
+}
+
+.demo-note {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f2f4f7;
+  border-radius: 10px;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.5;
+}
